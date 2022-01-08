@@ -11,10 +11,10 @@ Import the package
 
 
 Inside of the main Function Create the Service
-`service := watson.CreateService("IBM_WATSON_SPEECHRECOGNITION_KEY" , "URL");`
+`service := watson.CreateService("IBM_WATSON_SPEECHRECOGNITION_KEY" , "URL")`
 
 Transcribe a file and get the result as a string
-`var transcription string = watson.TranscribeFile("filename.mp3")`
+`var transcription string = watson.TranscribeFile(service , "filename.mp3")`
 
 Print the results
 `fmt.Println(transcription)`
